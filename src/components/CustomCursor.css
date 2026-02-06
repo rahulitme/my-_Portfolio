@@ -1,0 +1,105 @@
+/* Custom Cursor Styles */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.6);
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #667eea;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  animation: cursorAnim 0.5s infinite alternate;
+  box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
+}
+
+/* Hovering state - expand cursor */
+.cursor-dot.hovering {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 0 30px rgba(240, 147, 251, 0.6);
+}
+
+.cursor-outline.hovering {
+  width: 60px;
+  height: 60px;
+  border-color: #f093fb;
+  opacity: 0.8;
+  box-shadow: 0 0 40px rgba(240, 147, 251, 0.5);
+}
+
+/* Clicking state */
+.cursor-dot.clicking {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #ffeaa7 0%, #fd79a8 100%);
+  box-shadow: 0 0 25px rgba(253, 121, 168, 0.8);
+}
+
+.cursor-outline.clicking {
+  width: 30px;
+  height: 30px;
+  border-color: #fd79a8;
+  box-shadow: 0 0 35px rgba(253, 121, 168, 0.6);
+}
+
+/* Pulsing animation for cursor outline */
+@keyframes cursorAnim {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* Hide default cursor */
+body,
+a,
+button,
+input,
+textarea,
+select {
+  cursor: none !important;
+}
+
+/* Mobile devices - show default cursor */
+@media (pointer: coarse) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+  
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: auto !important;
+  }
+}
+
+/* Smooth follow effect with delay */
+.cursor-outline {
+  transition: left 0.15s ease-out, top 0.15s ease-out, width 0.3s ease, height 0.3s ease;
+}
+
+.cursor-dot {
+  transition: left 0.05s ease-out, top 0.05s ease-out, width 0.3s ease, height 0.3s ease;
+}

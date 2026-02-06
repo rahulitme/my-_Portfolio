@@ -1,0 +1,99 @@
+.companies {
+  padding: 4rem 0 6rem;
+  background: #0a0a0a;
+}
+
+.companies-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.companies-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 3rem 0;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.company-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.company-item:hover {
+  transform: translateY(-5px);
+}
+
+.company-logo {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.company-item:hover .company-logo {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Specific styling for company names to match the design */
+.company-item:nth-child(1) .company-logo {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.company-item:nth-child(2) .company-logo {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.company-item:nth-child(3) .company-logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.company-item:nth-child(4) .company-logo {
+  font-weight: 400;
+}
+
+.company-item:nth-child(5) .company-logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1024px) {
+  .companies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .companies-container {
+    padding: 0 1.5rem;
+  }
+
+  .companies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .company-logo {
+    font-size: 1.2rem;
+  }
+
+  .company-item:nth-child(5) .company-logo {
+    font-size: 1.5rem;
+  }
+}
