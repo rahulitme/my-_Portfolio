@@ -1,0 +1,18 @@
+# Step 1: Build the app
+FROM node:20-alpine AS build
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+RUN npm run build
+
+# Step 2: Serve using nginx
+FROM nginx:alpine
+
+COPY --from=build /app/dist /usr/share/nginx/html
+# For React (CRA), use /app/build instead of /app/dist
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,9 +1,14 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Projects.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const [expandedCard, setExpandedCard] = useState(null);
   const [activeType, setActiveType] = useState('all');
+  const projectsGridRef = useRef(null);
 
   const projects = [
     {
@@ -198,6 +203,57 @@ const Projects = () => {
     return '⚡';
   };
 
+  useEffect(() => {
+    // Animate project cards with stagger effect
+    const cards = projectsGridRef.current?.querySelectorAll('.project-card');
+    if (cards && cards.length > 0) {
+      // Set initial state
+      gsap.set(cards, { opacity: 1, y: 0 });
+      
+      gsap.fromTo(cards, 
+        {
+          opacity: 0,
+          y: 30
+        },
+        {
+          scrollTrigger: {
+            trigger: projectsGridRef.current,
+            start: 'top center+=100',
+            toggleActions: 'play none none none'
+          },
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: 'power2.out'
+        }
+      );
+    }
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, [filteredProjects]);
+
+  // Hover animation for project cards
+  const handleCardHover = (e) => {
+    gsap.to(e.currentTarget, {
+      y: -10,
+      boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
+      duration: 0.4,
+      ease: 'power2.out'
+    });
+  };
+
+  const handleCardHoverEnd = (e) => {
+    gsap.to(e.currentTarget, {
+      y: 0,
+      boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+      duration: 0.4,
+      ease: 'power2.out'
+    });
+  };
+
   return (
     <section className="projects" id="projects">
       <div className="projects-container">
@@ -217,13 +273,19 @@ const Projects = () => {
             </button>
           ))}
         </div>
-        <div className="projects-grid">
+        <div className="projects-grid" ref={projectsGridRef}>
           {filteredProjects.map((project, index) => (
             <div 
               key={project.id} 
               className={`project-card ${expandedCard === index ? 'expanded' : ''}`}
-              onMouseEnter={() => setExpandedCard(index)}
-              onMouseLeave={() => setExpandedCard(null)}
+              onMouseEnter={(e) => {
+                setExpandedCard(index);
+                handleCardHover(e);
+              }}
+              onMouseLeave={(e) => {
+                setExpandedCard(null);
+                handleCardHoverEnd(e);
+              }}
             >
               <div className="project-image-wrapper">
                 <div className="project-image">

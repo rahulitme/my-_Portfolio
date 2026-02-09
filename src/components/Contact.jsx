@@ -32,8 +32,8 @@ const Contact = () => {
         </svg>
       ),
       title: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      value: 'rahulmandal705071@gmail.com',
+      link: 'mailto:rahulmandal705071@gmail.com'
     },
     {
       icon: (
@@ -42,8 +42,8 @@ const Contact = () => {
         </svg>
       ),
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+91 6204794931',
+      link: 'tel:+916204794931'
     },
     {
       icon: (
@@ -52,7 +52,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Location',
-      value: 'City, Country',
+      value: 'Bangalore, India',
       link: null
     }
   ];

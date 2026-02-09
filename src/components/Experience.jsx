@@ -30,13 +30,19 @@ const Experience = () => {
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University Name',
-      period: '2020 - 2024',
+      degree: 'Master of Computer Applications (MCA)',
+      institution: 'Visvesvaraya Technological University, Bangalore',
+      period: '2024',
       achievements: [
-        'GPA: 3.7/4.0',
-        'Relevant Coursework: Data Structures, Algorithms, Web Development',
-        'Dean\'s List: 3 semesters'
+        'CGPA: 8.4/10'
+      ]
+    },
+    {
+      degree: 'Bachelor of Computer Applications (BCA)',
+      institution: 'Vinoba Bhave University, Hazaribagh',
+      period: '2022',
+      achievements: [
+        'CGPA: 7.67/10'
       ]
     }
   ];

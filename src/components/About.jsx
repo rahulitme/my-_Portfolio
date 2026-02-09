@@ -39,12 +39,13 @@ const About = () => {
             <div className="education-item">
               <h4 className="degree-name">Master of Computer Applications (MCA)</h4>
               <p className="university">Visvesvaraya Technological University, Bangalore</p>
-              <p className="cgpa">CGPA: 8.4/10 – Awarded for academic excellence and dedication</p>
+              <p className="cgpa">CGPA: 8.4/10</p>
               <p className="graduation-year">2024</p>
             </div>
             <div className="education-item">
               <h4 className="degree-name">Bachelor of Computer Applications (BCA)</h4>
               <p className="university">Vinoba Bhave University, Hazaribagh</p>
+              <p className="cgpa">CGPA: 7.67/10</p>
               <p className="graduation-year">2022</p>
             </div>
           </div>

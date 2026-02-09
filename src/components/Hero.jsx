@@ -1,5 +1,6 @@
 import './Hero.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import gsap from 'gsap';
 import photo from '../assets/photo.png';
 
 const Hero = () => {
@@ -8,6 +9,8 @@ const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
+  const heroImageRef = useRef(null);
+  const buttonsRef = useRef(null);
 
   const roles = ['Frontend Developer', 'React Developer', 'UI Developer', 'Full Stack Developer'];
   const typingSpeed = 100;
@@ -16,6 +19,48 @@ const Hero = () => {
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // GSAP animations
+    const tl = gsap.timeline();
+    
+    // Animate hero image with rotation and scale
+    tl.from(heroImageRef.current, {
+      opacity: 0,
+      scale: 0.8,
+      y: 30,
+      duration: 0.8,
+      ease: 'back.out(1.7)'
+    }, 0);
+
+    // Animate buttons
+    tl.from(buttonsRef.current?.querySelectorAll('.cta-button, .secondary-button'), {
+      opacity: 0,
+      y: 20,
+      duration: 0.6,
+      stagger: 0.1,
+      ease: 'power2.out'
+    }, 0.3);
+
+    // Add floating animation to hero image
+    gsap.to(heroImageRef.current?.querySelector('.image-placeholder'), {
+      y: 20,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: 'sine.inOut',
+      delay: 0.5
+    });
+
+    // Add pulsing animation to circles
+    gsap.to('.circle-bg', {
+      scale: 1.1,
+      opacity: 0.5,
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      stagger: 0.1,
+      ease: 'sine.inOut'
+    });
   }, []);
 
   useEffect(() => {
@@ -62,7 +107,7 @@ const Hero = () => {
             responsive web applications. I specialize in React, Node.js, and creating 
             seamless user experiences with clean, efficient code.
           </p>
-          <div className="hero-buttons animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="hero-buttons animate-slide-up" ref={buttonsRef} style={{ animationDelay: '0.4s' }}>
             <a href="#contact" className="cta-button">
               Let's get started
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -74,7 +119,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className={`hero-image ${isVisible ? 'animate' : ''}`}>
+        <div className={`hero-image ${isVisible ? 'animate' : ''}`} ref={heroImageRef}>
           <div className="image-placeholder animate-float">
             <img
               className="hero-photo"

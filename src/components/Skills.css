@@ -28,6 +28,7 @@
   border-radius: 12px;
   padding: 2rem;
   transition: all 0.3s ease;
+  opacity: 1;
 }
 
 .skill-category:hover {
@@ -84,6 +85,7 @@
   background: linear-gradient(90deg, #6cb33f 0%, #5a9a35 100%);
   border-radius: 4px;
   transition: width 1s ease;
+  width: 0;
 }
 
 @media (max-width: 1024px) {
