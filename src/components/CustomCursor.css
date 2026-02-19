@@ -9,7 +9,7 @@
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #667eea;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
@@ -31,7 +31,7 @@
 .cursor-dot.hovering {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: #f093fb;
   box-shadow: 0 0 30px rgba(240, 147, 251, 0.6);
 }
 
@@ -47,7 +47,7 @@
 .cursor-dot.clicking {
   width: 12px;
   height: 12px;
-  background: linear-gradient(135deg, #ffeaa7 0%, #fd79a8 100%);
+  background: #fd79a8;
   box-shadow: 0 0 25px rgba(253, 121, 168, 0.8);
 }
 
@@ -84,7 +84,7 @@ select {
   .cursor-outline {
     display: none;
   }
-  
+
   body,
   a,
   button,

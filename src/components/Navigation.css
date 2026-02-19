@@ -1,5 +1,5 @@
 .navigation {
-  background: rgba(30, 30, 30, 0.95);
+  background: var(--espresso);
   backdrop-filter: blur(10px);
   padding: 1.5rem 0;
   position: fixed;
@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(var(--cream-rgb), 0.12);
 }
 
 .nav-container {
@@ -28,7 +28,7 @@
 }
 
 .nav-links a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(var(--cream-rgb), 0.7);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -37,7 +37,7 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #fff;
+  color: var(--gold);
 }
 
 .social-links {
@@ -47,14 +47,14 @@
 }
 
 .social-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--cream-rgb), 0.6);
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
 }
 
 .social-links a:hover {
-  color: #fff;
+  color: var(--gold);
 }
 
 .social-links svg {

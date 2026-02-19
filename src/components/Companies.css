@@ -1,6 +1,6 @@
 .companies {
   padding: 4rem 0 6rem;
-  background: #0a0a0a;
+  background: var(--espresso);
 }
 
 .companies-container {
@@ -12,7 +12,7 @@
 .companies-title {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--cream-rgb), 0.6);
   margin: 0 0 3rem 0;
   text-transform: capitalize;
   letter-spacing: 0.5px;
@@ -38,14 +38,14 @@
 }
 
 .company-logo {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(var(--cream-rgb), 0.5);
   font-size: 1.5rem;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .company-item:hover .company-logo {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(var(--cream-rgb), 0.8);
 }
 
 /* Specific styling for company names to match the design */

@@ -99,7 +99,7 @@ const Hero = () => {
             Hi, I'm
           </p>
           <h1 className="hero-title animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-gradient typing-effect">{displayText}</span>
+            <span className="hero-name typing-effect">{displayText}</span>
             <span className="typing-cursor">|</span>
           </h1>
           <p className="hero-text animate-slide-up" style={{ animationDelay: '0.3s' }}>

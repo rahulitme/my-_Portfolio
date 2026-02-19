@@ -1,6 +1,6 @@
 .about {
   padding: 6rem 0;
-  background: #0f0f0f;
+  background: var(--espresso);
 }
 
 .about-container {
@@ -12,7 +12,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--cream);
   margin: 0 0 2rem 0;
 }
 
@@ -23,7 +23,7 @@
 .about-text {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(var(--cream-rgb), 0.75);
   margin: 0 0 1.5rem 0;
 }
 
@@ -33,7 +33,7 @@
   gap: 3rem;
   margin-top: 3rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(var(--cream-rgb), 0.12);
 }
 
 .stat-item {
@@ -43,26 +43,26 @@
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #6cb33f;
+  color: var(--gold);
   margin: 0 0 0.5rem 0;
 }
 
 .stat-label {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--cream-rgb), 0.6);
   margin: 0;
 }
 
 .education {
   margin-top: 3rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(var(--cream-rgb), 0.12);
 }
 
 .education-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--cream);
   margin: 0 0 2rem 0;
 }
 
@@ -73,25 +73,25 @@
 .degree-name {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #6cb33f;
+  color: var(--gold);
   margin: 0 0 0.5rem 0;
 }
 
 .university {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(var(--cream-rgb), 0.8);
   margin: 0 0 0.5rem 0;
 }
 
 .cgpa {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(var(--cream-rgb), 0.7);
   margin: 0 0 0.5rem 0;
 }
 
 .graduation-year {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--cream-rgb), 0.6);
   margin: 0;
 }
 
@@ -100,7 +100,7 @@
   gap: 1.5rem;
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(var(--cream-rgb), 0.12);
 }
 
 .social-link {
@@ -111,13 +111,13 @@
   text-decoration: none;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
-  border: 2px solid #6cb33f;
-  color: #6cb33f;
+  border: 2px solid var(--gold);
+  color: var(--gold);
 }
 
 .social-link:hover {
-  background-color: #6cb33f;
-  color: #000;
+  background-color: var(--gold);
+  color: var(--espresso);
   transform: translateY(-2px);
 }
 

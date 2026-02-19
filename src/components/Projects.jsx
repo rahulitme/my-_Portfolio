@@ -239,7 +239,7 @@ const Projects = () => {
   const handleCardHover = (e) => {
     gsap.to(e.currentTarget, {
       y: -10,
-      boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
+      boxShadow: '0 25px 45px rgba(5, 8, 20, 0.8), 0 0 0 1px rgba(37, 99, 235, 0.2), 0 0 24px rgba(37, 99, 235, 0.25)',
       duration: 0.4,
       ease: 'power2.out'
     });
@@ -248,7 +248,7 @@ const Projects = () => {
   const handleCardHoverEnd = (e) => {
     gsap.to(e.currentTarget, {
       y: 0,
-      boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+      boxShadow: '0 18px 40px rgba(3, 6, 16, 0.6)',
       duration: 0.4,
       ease: 'power2.out'
     });
