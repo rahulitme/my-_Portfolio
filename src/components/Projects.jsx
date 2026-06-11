@@ -19,7 +19,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/rahulitme/Dashboard-UI',
       deployUrl: 'https://dashboard-ui-roan.vercel.app/',
       type: 'web',
-      image: 'https://placehold.co/600x400/E0E0E0.png',
+      image: 'https://picsum.photos/seed/dashboard-ui/600/400',
       dataAiHint: 'dashboard data'
     },
     {
@@ -29,7 +29,7 @@ const Projects = () => {
       technologies: ['Flutter', 'Dart', 'Firebase'],
       githubUrl: 'https://github.com/rahulitme/Final_Year_Project',
       type: 'mobile',
-      image: 'https://placehold.co/600x400/D6EAF8.png',
+      image: 'https://picsum.photos/seed/fit-and-finder/600/400',
       dataAiHint: 'fashion mobile'
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
       technologies: ['React', 'Next.js', 'Tailwind CSS'],
       githubUrl: 'https://github.com/rahulitme/myportfolio',
       type: 'web',
-      image: 'https://placehold.co/600x400/D1F2EB.png',
+      image: 'https://picsum.photos/seed/personal-portfolio/600/400',
       dataAiHint: 'portfolio website'
     },
     {
@@ -49,7 +49,7 @@ const Projects = () => {
       technologies: ['Flutter', 'Dart', 'State Management'],
       githubUrl: 'https://github.com/rahulitme/Grocery-App',
       type: 'mobile',
-      image: 'https://placehold.co/600x400/FDEDEC.png',
+      image: 'https://picsum.photos/seed/grocery-app/600/400',
       dataAiHint: 'ecommerce mobile'
     },
     {
@@ -60,7 +60,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/rahulitme/-customers-_survey',
       deployUrl: 'https://customers-survey-5j16.vercel.app/',
       type: 'web',
-      image: 'https://placehold.co/600x400/FCF3CF.png',
+      image: 'https://picsum.photos/seed/customer-feedback-form/600/400',
       dataAiHint: 'feedback form'
     },
     {
@@ -71,7 +71,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/rahulitme/Travel-web-application',
       deployUrl: 'https://travel-web-application.vercel.app/',
       type: 'web',
-      image: 'https://placehold.co/600x400/E8DAEF.png',
+      image: 'https://picsum.photos/seed/traveling-web-app/600/400',
       dataAiHint: 'travel booking'
     },
     {
@@ -82,7 +82,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/rahulitme/Daily_Reminder_App',
       deployUrl: 'https://welcome-aa71e.web.app',
       type: 'mobile',
-      image: 'https://placehold.co/600x400/D5F5E3.png',
+      image: 'https://picsum.photos/seed/clock-app/600/400',
       dataAiHint: 'reminder clock'
     },
     {
@@ -92,7 +92,7 @@ const Projects = () => {
       technologies: ['React', 'Node.js'],
       githubUrl: 'https://github.com/rahulitme/library-management',
       type: 'web',
-      image: 'https://placehold.co/600x400/FAE5D3.png',
+      image: 'https://picsum.photos/seed/library-management-system/600/400',
       dataAiHint: 'library system'
     },
     {
@@ -102,7 +102,7 @@ const Projects = () => {
       technologies: ['React', 'OpenWeather API'],
       githubUrl: 'https://github.com/rahulitme/Weather_Web_app',
       type: 'web',
-      image: 'https://placehold.co/600x400/CFD8DC.png',
+      image: 'https://picsum.photos/seed/weather-application/600/400',
       dataAiHint: 'weather forecast'
     },
     {
@@ -112,7 +112,7 @@ const Projects = () => {
       technologies: ['Flutter', 'Dart', 'Bluetooth API'],
       githubUrl: 'https://github.com/rahulitme/-Bluetooth-_beacon_App',
       type: 'mobile',
-      image: 'https://placehold.co/600x400/FDEBD0.png',
+      image: 'https://picsum.photos/seed/bluetooth-beacon-app/600/400',
       dataAiHint: 'bluetooth beacon'
     },
     {
@@ -122,7 +122,7 @@ const Projects = () => {
       technologies: ['Flutter', 'Dart', 'Firebase Auth'],
       githubUrl: 'https://github.com/rahulitme/Event_Application',
       type: 'mobile',
-      image: 'https://placehold.co/600x400/EAEDED.png',
+      image: 'https://picsum.photos/seed/event-application/600/400',
       dataAiHint: 'event mobile'
     },
     {
@@ -133,7 +133,7 @@ const Projects = () => {
       deployUrl: 'https://v0-blog-website-requirements-rho.vercel.app/',
       githubUrl: 'https://github.com/rahulitme/Crud-operations',
       type: 'web',
-      image: 'https://placehold.co/600x400/EAEDED.png',
+      image: 'https://picsum.photos/seed/blog-application/600/400',
       dataAiHint: 'blog content'
     },
     {
@@ -144,7 +144,7 @@ const Projects = () => {
       deployUrl: 'https://rahulitme.github.io/Hotel-Management/',
       githubUrl: 'https://github.com/rahulitme/Hotel-Management',
       type: 'web',
-      image: 'https://placehold.co/600x400/EAEDED.png',
+      image: 'https://picsum.photos/seed/hotel-booking/600/400',
       dataAiHint: 'hotel booking'
     },
     {
@@ -155,7 +155,7 @@ const Projects = () => {
       deployUrl: 'https://gemini-movie-verse.vercel.app/',
       githubUrl: 'https://github.com/rahulitme/gemini-movie-verse',
       type: 'web',
-      image: 'https://placehold.co/600x400/EAEDED.png',
+      image: 'https://picsum.photos/seed/movie-recommendation/600/400',
       dataAiHint: 'movie recommendation'
     },
     {
@@ -166,7 +166,7 @@ const Projects = () => {
       deployUrl: 'https://interview-schedule-web-app.vercel.app/',
       githubUrl: 'https://github.com/rahulitme/interview-schedule-web-app',
       type: 'web',
-      image: 'https://placehold.co/600x400/EAEDED.png',
+      image: 'https://picsum.photos/seed/interview-schedule-web-app/600/400',
       dataAiHint: 'interview scheduling'
     },
     {
@@ -177,7 +177,7 @@ const Projects = () => {
       deployUrl: 'https://v0-vite-react-setup-ten.vercel.app/',
       githubUrl: 'https://github.com/rahulitme/Staff-profile-Create',
       type: 'web',
-      image: 'https://placehold.co/600x400/EAEDED.png',
+      image: 'https://picsum.photos/seed/staff-profile-management/600/400',
       dataAiHint: 'staff management'
     }
   ];
