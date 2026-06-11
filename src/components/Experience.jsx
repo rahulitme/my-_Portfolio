@@ -3,27 +3,33 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Frontend Developer Intern',
-      company: 'Code Inbound LLP',
-      period: 'Nov 2024 - Apr 2025',
-      location: 'Remote',
+      title: 'Full Stack Developer',
+      company: 'Campaign Harvest',
+      period: 'Sep 2025 – March 2026',
       responsibilities: [
-        'Developed 5+ interactive real-time dashboards for Network Monitoring System (NMS) using React.js and TypeScript, improving UI responsiveness by 25%.',
-        'Integrated REST APIs to support real-time data visualization with <2s latency across all monitoring dashboards.',
-        'Implemented device discovery, SNMP/ICMP monitoring, and bandwidth/traffic tracking features.',
-        'Collaborated with backend developers to optimize data-fetch strategies, reducing frontend data latency by 30%.'
+        'Developed and maintained scalable web applications using React.js, Node.js, and Express.js.',
+        'Designed and implemented RESTful APIs, enabling seamless communication between frontend and backend systems.',
+        'Integrated APIs with frontend interfaces to ensure smooth data flow and real-time updates.'
       ]
     },
     {
-      title: 'Frontend Developer',
+      title: 'Frontend Developer Intern',
       company: 'Zylentrix Ltd',
-      period: 'May 2025 - Jan 2026',
-      location: 'Remote',
+      period: 'March 2025 – Sep 2025',
       responsibilities: [
-        'Developed production-ready React and Next.js applications for digital marketing platforms at UK-based global consultancy.',
-        'Built real-time analytics dashboards tracking campaign performance and user engagement for 20+ clients.',
-        'Improved page load time by 30% through strategic lazy loading and code splitting implementation.',
-        'Collaborated with marketing teams to integrate SEO and content strategies into web platforms, contributing to 250% average ROI increase.'
+        'Built real-world web applications using React and Next.js for a digital marketing platform (DigiZign) at a UK-based company.',
+        'Developed real-time analytics dashboards to track campaign performance and user engagement.',
+        'Improved page load time through strategic lazy loading and code splitting implementation.'
+      ]
+    },
+    {
+      title: 'Frontend Developer Intern',
+      company: 'Code Inbound LLP',
+      period: 'Nov 2024 – Feb 2025',
+      responsibilities: [
+        'Developed interactive real-time dashboards for Network Monitoring System (NMS) using React.js and TypeScript, improving UI responsiveness.',
+        'Integrated REST APIs to support real-time data visualization across all monitoring dashboards.',
+        'Implemented device discovery, SNMP/ICMP monitoring, and bandwidth/traffic tracking.'
       ]
     }
   ];
@@ -69,7 +75,7 @@ const Experience = () => {
                     <span className="company">{exp.company}</span>
                     <span className="period">{exp.period}</span>
                   </div>
-                  <p className="location">{exp.location}</p>
+                  {exp.location && <p className="location">{exp.location}</p>}
                   <ul className="responsibilities">
                     {exp.responsibilities.map((resp, idx) => (
                       <li key={idx}>{resp}</li>
